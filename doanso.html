@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game đoán số</title>
+</head>
+<body>
+<script>
+    let result = 30;
+    function doanSo() {
+        let number = parseInt(prompt('nhập số'));
+        while (number !== result) {
+            if (number < result) {
+                alert('quá thấp!mời nhập lại');
+                number = parseInt(prompt('nhập số'));
+            }
+            if (number > result) {
+                alert('quá cao!mời nhập lại');
+                number = parseInt(prompt('nhập số'));
+            }
+        }
+        if (number === result) {
+            alert('bạn đã chọn đúng!');
+        }
+    }
+    doanSo();
+</script>
+</body>
+</html>
